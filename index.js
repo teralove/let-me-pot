@@ -1,5 +1,5 @@
 /**
- * Version: 0.1.3
+ * Version: 0.1.4
  * Made by Loggeru
  */
 
@@ -49,7 +49,7 @@ module.exports = function LetMePot(dispatch) {
 
     dispatch.hook('S_LOGIN', 10, (event) => { oCid = event.gameId; });
 
-    dispatch.hook('S_SPAWN_ME', 2, event => { oAlive = event.alive; });
+    dispatch.hook('S_SPAWN_ME', 3, event => { oAlive = event.alive; });
 
     dispatch.hook('C_PLAYER_LOCATION', 5, { order: -10 }, (event) => {
         oX = (event.loc.x + event.dest.x) / 2;
@@ -64,7 +64,7 @@ module.exports = function LetMePot(dispatch) {
         }
     });
 
-    dispatch.hook('S_INVEN', 12, { order: -10 }, (event) => {
+    dispatch.hook('S_INVEN', 16, { order: -10 }, (event) => {
         if (!enabled) return; // Too much info, better just turn off if disabled
 
         let tempInv = event.items;
@@ -151,7 +151,7 @@ module.exports = function LetMePot(dispatch) {
 
     function message(msg, chat = false) {
         if (chat == true) {
-            command.message('(Let Me Pot) ' + msg);
+            command.message(msg);
         } else {
             console.log('(Let Me Pot) ' + msg);
         }
