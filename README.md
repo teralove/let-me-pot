@@ -1,5 +1,5 @@
 # let-me-pot
-Auto HP/MP Pot module for Tera Proxy.
+Auto-drink HP/MP Potions.
 
 ## Commands
 ### `letmepot [off/on]`
@@ -14,7 +14,7 @@ Auto HP/MP Pot module for Tera Proxy.
 ### `letmepot notification [off/on]`
 - Toggle message notifications
 
-### `letmepot combat`
+### `letmepot combat`[off/on]`
 - Toggle option to auto-drink pots in combat only
 
 ### `getpotinfo`
