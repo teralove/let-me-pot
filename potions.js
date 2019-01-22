@@ -41,7 +41,37 @@ module.exports = [
         id: 0,
         invQtd: 0
     },
-
+    {
+        item: 80095,
+        name: "Federation Supply: Rejuvenation Potion",
+        cd: 30,
+        hp: true,
+        use_at: 20,
+        inCd: false,
+        id: 0,
+        invQtd: 0
+    },
+    {
+        item: 111,
+        name: "Rejuvenation Potion",
+        cd: 30,
+        hp: true,
+        use_at: 20,
+        inCd: false,
+        id: 0,
+        invQtd: 0
+    },
+    {
+        item: 112,
+        name: "Rejuvenation Potion", // (Non-tradeable)
+        cd: 30,
+        hp: true,
+        use_at: 20,
+        inCd: false,
+        id: 0,
+        invQtd: 0
+    },
+    
     // MP
     {
         item: 6562,
@@ -49,6 +79,16 @@ module.exports = [
         cd: 10,
         hp: false,
         use_at: 50,
+        inCd: false,
+        id: 0,
+        invQtd: 0
+    },
+    {
+        item: 130,
+        name: "Divine Infusion",
+        cd: 30,
+        hp: false,
+        use_at: 20,
         inCd: false,
         id: 0,
         invQtd: 0

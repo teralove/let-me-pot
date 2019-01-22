@@ -1,0 +1,15 @@
+{
+    "disableAutoUpdate": false,
+    "name": "let-me-pot",
+    "author": "teralove, Loggeru",
+    "description": "Auto HP/MP Pot module",
+    "version": "0.1.5",
+    "options": {
+        "niceName": "Let Me Pot",
+        "settingsVersion": 1,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js"
+    },
+    "servers": ["https://raw.githubusercontent.com/teralove/let-me-pot/master/"],
+    "supportUrl": "https://github.com/teralove/let-me-pot/issues"
+}
