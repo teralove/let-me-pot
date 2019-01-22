@@ -1,0 +1,22 @@
+{
+    "files": {
+        "config.json": {
+            "overwrite": false,
+            "hash": "b6edd9df086711443efcf1907345f754bc0adbd6ed1df4c0bb936eec4cfae9bd"
+        },
+        "potions.js": {
+            "overwrite": false,
+            "hash": "7f503a0aedce4c111b55eda758f4e029062b79958c25f207148a4b797cf88ec5"
+        },
+        "index.js": "4f6c0b9b0ca01419aa561f921113154eb41c2ec41032ed5af69747bba71cd8d3",
+        "settings_migrator.js": "570f899d10547133590d9d727a530a055490702019580f7e406057972809563a"
+    },
+    "defs": {
+        "C_PLAYER_LOCATION": 5,
+        "S_USER_STATUS": 1,
+        "S_INVEN": 16,
+        "C_USE_ITEM": 3,
+        "S_CREATURE_CHANGE_HP": 6,
+        "S_PLAYER_CHANGE_MP": 1
+    }
+}
