@@ -151,7 +151,7 @@ module.exports = function LetMePot(mod) {
             } else {
                 mod.settings.autoMp = !mod.settings.autoMp;
             }
-            mod.command.message('Auto-HP: ' + (mod.settings.autoMp ? 'Enabled'.clr('56B4E9') : 'Disabled'.clr('E69F00')));
+            mod.command.message('Auto-MP: ' + (mod.settings.autoMp ? 'Enabled'.clr('56B4E9') : 'Disabled'.clr('E69F00')));
         }
         else if(["notice", "notification", "notifications", "message", "messages"].includes(arg))
         {

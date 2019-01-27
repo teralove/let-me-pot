@@ -11,5 +11,8 @@
         "settingsMigrator": "settings_migrator.js"
     },
     "servers": ["https://raw.githubusercontent.com/teralove/let-me-pot/master/"],
-    "supportUrl": "https://github.com/teralove/let-me-pot/issues"
+    "supportUrl": "https://github.com/teralove/let-me-pot/issues",
+    "dependencies": {
+        "tera-game-state": "https://raw.githubusercontent.com/caali-hackerman/tera-game-state/master/module.json"
+    }
 }
