@@ -8,7 +8,8 @@
             "overwrite": false,
             "hash": "7f503a0aedce4c111b55eda758f4e029062b79958c25f207148a4b797cf88ec5"
         },
-        "index.js": "4f6c0b9b0ca01419aa561f921113154eb41c2ec41032ed5af69747bba71cd8d3",
+        "index.js": "41113feba58305eb41af6a4aba326d54738df401983c04535642e2607ca1b232",
+        "module.json": "2a6386eced62cbe24be8b5ea97e25bfeab57d6a82d00f9911f30749855f7fef3",
         "settings_migrator.js": "570f899d10547133590d9d727a530a055490702019580f7e406057972809563a"
     },
     "defs": {
