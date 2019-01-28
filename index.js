@@ -8,7 +8,8 @@ module.exports = function LetMePot(mod) {
         oMana = 100,
         oLoc = null,
         oW = 0,
-        getPotInfo = false;
+        getPotInfo = false,
+        resCd = false;
 
     let hpPotList = potions.filter(function (p) { return p.hp == true; }),
         manaPotList = potions.filter(function (p) { return p.hp != true; });
@@ -16,12 +17,17 @@ module.exports = function LetMePot(mod) {
     hpPotList.sort(function (a, b) { return parseFloat(a.use_at) - parseFloat(b.use_at); });
     manaPotList.sort(function (a, b) { return parseFloat(a.use_at) - parseFloat(b.use_at); });
 
+    mod.game.me.on('resurrect', () => { 
+        resCd = true;
+        setTimeout(()=>{resCd = false;}, mod.settings.delayAfterRes);
+    })
+    
     mod.hook('C_PLAYER_LOCATION', 5, { order: -10 }, (event) => {
         oLoc = (event.loc + event.dest) / 2;
         oW = event.w;
     });
 
-    mod.hook('S_INVEN', 16, { order: -10 }, (event) => {
+    mod.hook('S_INVEN', 17, { order: -10 }, (event) => {
         if (!mod.settings.enabled) return; // Too much info, better just turn off if disabled
 
         let tempInv = event.items;
@@ -42,16 +48,16 @@ module.exports = function LetMePot(mod) {
     });
 
     mod.hook('C_USE_ITEM', 3, { order: -10 }, (event) => {
-        if (getPotInfo == true && event.gameId == (mod.game.me.gameId)) {
+        if (getPotInfo == true && mod.game.me.is(event.gameId)) {
             mod.command.message('Potion info: { item: ' + event.id + ' }');
             getPotInfo = false;
         }
     });
 
     mod.hook('S_CREATURE_CHANGE_HP', 6, (event) => {
-        if (!mod.settings.enabled || !mod.settings.autoHp) return;
+        if (!mod.settings.enabled || !mod.settings.autoHp || resCd) return;
 
-        if (event.target == (mod.game.me.gameId)) {
+        if (mod.game.me.is(event.target)) {
             if ((mod.game.me.inCombat || !mod.settings.combatOnly) && mod.game.me.alive) {
                 oHp = Math.round(Number(event.curHp) / Number(event.maxHp) * 100);
                 
@@ -71,9 +77,9 @@ module.exports = function LetMePot(mod) {
     });
 
     mod.hook('S_PLAYER_CHANGE_MP', 1, (event) => {
-        if (!mod.settings.enabled || !mod.settings.autoMp) return;
+        if (!mod.settings.enabled || !mod.settings.autoMp || resCd) return;
 
-        if (event.target == (mod.game.me.gameId)) {
+        if (mod.game.me.is(event.target)) {
             if ((mod.game.me.inCombat || !mod.settings.combatOnly) == true && mod.game.me.alive) {
                 oMana = Math.round(Number(event.currentMp) / Number(event.maxMp) * 100);
                 for (let i = 0; i < manaPotList.length; i++) {

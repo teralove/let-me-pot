@@ -1,9 +1,9 @@
 {
-    "disableAutoUpdate": false,
+    "disableAutoUpdate": true,
     "name": "let-me-pot",
     "author": "teralove, Loggeru",
     "description": "Auto HP/MP Pot module",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "options": {
         "niceName": "Let Me Pot",
         "settingsVersion": 1,

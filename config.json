@@ -5,6 +5,7 @@
         "autoHp": true,
         "autoMp": true,
         "notifications": false,
-        "combatOnly": true
+        "combatOnly": true,
+        "delayAfterRes": 10000
     }
 }

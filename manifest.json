@@ -14,8 +14,7 @@
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
-        "S_USER_STATUS": 1,
-        "S_INVEN": 16,
+        "S_INVEN": 17,
         "C_USE_ITEM": 3,
         "S_CREATURE_CHANGE_HP": 6,
         "S_PLAYER_CHANGE_MP": 1

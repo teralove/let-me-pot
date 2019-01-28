@@ -5,7 +5,8 @@ const DefaultSettings = {
     "autoHp": true,
     "autoMp": true,
     "notifications": false,
-    "combatOnly": true
+    "combatOnly": true,
+    "delayAfterRessing": 10000
 }
 
 module.exports = function MigrateSettings(from_ver, to_ver, settings) {
