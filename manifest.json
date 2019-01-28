@@ -10,7 +10,7 @@
         },
         "index.js": "5d44512b089a9715a69bf555fee57b396b339d38b0234e4d101ce6819e223b1d",
         "module.json": "cd389e8751f6950b9e7c02f8f6e3fcd5b01737e3d295eee3205931a3d9f6e5cf",
-        "settings_migrator.js": "de5f94deb4ca7e4cd2012837c6343388c1cc1f987142ddd2bdb8d0e20b841e09"
+        "settings_migrator.js": "7c762b8fcbd67a7e92f69b1e6211290b103f2051f3e2a2c7a54248bba864478f"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
