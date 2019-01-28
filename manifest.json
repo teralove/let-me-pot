@@ -2,15 +2,15 @@
     "files": {
         "config.json": {
             "overwrite": false,
-            "hash": "b6edd9df086711443efcf1907345f754bc0adbd6ed1df4c0bb936eec4cfae9bd"
+            "hash": "c8e34f1fcd3976dfd601a796a765a4693fc6668518ac9861e89bb82e9e6b168d"
         },
         "potions.js": {
             "overwrite": false,
             "hash": "7f503a0aedce4c111b55eda758f4e029062b79958c25f207148a4b797cf88ec5"
         },
-        "index.js": "41113feba58305eb41af6a4aba326d54738df401983c04535642e2607ca1b232",
-        "module.json": "2a6386eced62cbe24be8b5ea97e25bfeab57d6a82d00f9911f30749855f7fef3",
-        "settings_migrator.js": "570f899d10547133590d9d727a530a055490702019580f7e406057972809563a"
+        "index.js": "5d44512b089a9715a69bf555fee57b396b339d38b0234e4d101ce6819e223b1d",
+        "module.json": "cd389e8751f6950b9e7c02f8f6e3fcd5b01737e3d295eee3205931a3d9f6e5cf",
+        "settings_migrator.js": "de5f94deb4ca7e4cd2012837c6343388c1cc1f987142ddd2bdb8d0e20b841e09"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
