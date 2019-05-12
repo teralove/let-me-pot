@@ -3,7 +3,7 @@
     "name": "let-me-pot",
     "author": "teralove, Loggeru",
     "description": "Auto HP/MP Pot module",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "options": {
         "niceName": "Let Me Pot",
         "settingsVersion": 1,
