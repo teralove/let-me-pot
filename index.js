@@ -27,7 +27,7 @@ module.exports = function LetMePot(mod) {
         oW = event.w;
     });
 
-    mod.hook('S_INVEN', 17, { order: -10 }, (event) => {
+    mod.hook('S_INVEN', 18, { order: -10 }, (event) => {
         if (!mod.settings.enabled) return; // Too much info, better just turn off if disabled
 
         let tempInv = event.items;
