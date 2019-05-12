@@ -8,13 +8,13 @@
             "overwrite": false,
             "hash": "7f503a0aedce4c111b55eda758f4e029062b79958c25f207148a4b797cf88ec5"
         },
-        "index.js": "5d44512b089a9715a69bf555fee57b396b339d38b0234e4d101ce6819e223b1d",
-        "module.json": "cd389e8751f6950b9e7c02f8f6e3fcd5b01737e3d295eee3205931a3d9f6e5cf",
+        "index.js": "b5f04b4b78bb031089feedc13553e324fa4be8782f86a00678fccefa4c7061e4",
+        "module.json": "6afbd893f7fead41a8480ecbab5c4ef6a1c1fa4f5232bf03646776cb17911cbe",
         "settings_migrator.js": "7c762b8fcbd67a7e92f69b1e6211290b103f2051f3e2a2c7a54248bba864478f"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,
-        "S_INVEN": 17,
+        "S_INVEN": 18,
         "C_USE_ITEM": 3,
         "S_CREATURE_CHANGE_HP": 6,
         "S_PLAYER_CHANGE_MP": 1
